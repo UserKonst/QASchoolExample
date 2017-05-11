@@ -16,7 +16,7 @@
         <allure.commons.version>1.5.0</allure.commons.version>
         <driver.version>2.53.1</driver.version>
 
-        <tests>Timesheets.xml</tests>
+        <suite>GoogleSuite</suite>
         <server>stage</server>
     </properties>
     
@@ -32,7 +32,7 @@
                     </argLine>
                     
                     <suiteXmlFiles>
-                        <suiteXmlFile>./test_suites/${tests}.xml</suiteXmlFile>
+                        <suiteXmlFile>./test_suites/${suite}.xml</suiteXmlFile>
                     </suiteXmlFiles>
 
                     <systemPropertyVariables>
