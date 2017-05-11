@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1494538360602" stop="1494538365828" version="1.5.0" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Google suite : Google tests</name>
+    <title>Google suite : Google tests</title>
+    <test-cases>
+        <test-case start="1494538363394" stop="1494538364903" status="passed">
+            <name>some_test_method</name>
+            <steps>
+                <step start="1494538360805" stop="1494538363369" status="passed">
+                    <name>openBrowser[chrome]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1494538364846" stop="1494538364873" status="passed">
+                    <name>waitForDocumentReady</name>
+                    <attachments/>
+                    <steps>
+                        <step start="1494538364849" stop="1494538364873" status="passed">
+                            <name>waitForDocumentStateReady</name>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start="1494538364891" stop="1494538364899" status="passed">
+                    <name>getCurrentUrl</name>
+                    <attachments/>
+                    <steps>
+                        <step start="1494538364892" stop="1494538364899" status="passed">
+                            <name>getCurrentUrl</name>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Google suite"/>
+                <label name="testGroup" value="Google tests"/>
+                <label name="testClass" value="da.qa.school.tests.Test2"/>
+                <label name="testMethod" value="some_test_method"/>
+                <label name="feature" value="Feature 2"/>
+                <label name="host" value="KKOVBASA"/>
+                <label name="thread" value="6964@KKOVBASA.TestNG-test=Google tests-2(13)"/>
+            </labels>
+        </test-case>
+        <test-case start="1494538363403" stop="1494538364903" status="passed">
+            <name>some_test_method</name>
+            <steps>
+                <step start="1494538360805" stop="1494538363401" status="passed">
+                    <name>openBrowser[chrome]</name>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1494538364843" stop="1494538364877" status="passed">
+                    <name>waitForDocumentReady</name>
+                    <attachments/>
+                    <steps>
+                        <step start="1494538364844" stop="1494538364877" status="passed">
+                            <name>waitForDocumentStateReady</name>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start="1494538364890" stop="1494538364901" status="passed">
+                    <name>getCurrentUrl</name>
+                    <attachments/>
+                    <steps>
+                        <step start="1494538364890" stop="1494538364901" status="passed">
+                            <name>getCurrentUrl</name>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Google suite"/>
+                <label name="testGroup" value="Google tests"/>
+                <label name="testClass" value="da.qa.school.tests.Test1"/>
+                <label name="testMethod" value="some_test_method"/>
+                <label name="feature" value="Feature 1"/>
+                <label name="host" value="KKOVBASA"/>
+                <label name="thread" value="6964@KKOVBASA.TestNG-test=Google tests-1(12)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>
