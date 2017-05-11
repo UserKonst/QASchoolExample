@@ -40,7 +40,7 @@ public class BrowserFactory {
         driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
         WebDriverRunner.setWebDriver(driver);
 
-        System.out.println("*** " + browserName.toUpperCase() + "' STARTED ***");
+        System.out.println("*** " + browserName.toUpperCase() + " STARTED ***");
         LOG.info("*** BROWSER '" + browserName.toUpperCase() + "' STARTED *** " + new SimpleDateFormat("HH:mm:ss").format(new Date()));
 
         return driver;
