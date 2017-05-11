@@ -189,7 +189,7 @@ public class WebDriverUtil {
     
     @Step
     public static void waitForDocumentReady() {
-        waitForJQueryProcessing();
+       // waitForJQueryProcessing();
         waitForDocumentStateReady();
     }
     

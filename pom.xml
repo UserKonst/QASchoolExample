@@ -32,7 +32,7 @@
                     </argLine>
                     
                     <suiteXmlFiles>
-                        <suiteXmlFile>./test_suites/${tests}</suiteXmlFile>
+                        <suiteXmlFile>./test_suites/${tests}.xml</suiteXmlFile>
                     </suiteXmlFiles>
 
                     <systemPropertyVariables>
