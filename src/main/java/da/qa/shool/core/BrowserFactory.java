@@ -15,6 +15,7 @@ import ru.yandex.qatools.allure.annotations.Step;
 public class BrowserFactory {
 
     final static Logger LOG = Logger.getLogger(BrowserFactory.class);
+    private static final String GRID_URL = Config.get("gridUrl");
 
     @Step
     public static WebDriver openBrowser(String browserName) throws MalformedURLException {
@@ -32,8 +33,7 @@ public class BrowserFactory {
 
         }
 
-//        WebDriver driver = new RemoteWebDriver(
-//                new URL(GRID_URL), caps);
+//        WebDriver driver = new RemoteWebDriver(new URL(GRID_URL), caps);
         WebDriver driver = new ChromeDriver(caps);
 
         driver.manage().window().maximize();
