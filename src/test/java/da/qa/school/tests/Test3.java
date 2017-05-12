@@ -13,8 +13,8 @@ public class Test3 extends BaseTest {
     private SearchPage searchPage;
 
     @Test
-    public void some_test_method() {
+    public void button_search_should_be_displayed() {
         searchPage = open("https://google.com.ua", SearchPage.class);
-        assertTrue(searchPage.getCurrentUrl().contains("google.com"));
+        assertTrue(searchPage.isBtnSearchDisplayed());
     }
 }

@@ -1,21 +1,25 @@
 package da.qa.school.tests.google;
 
-import da.qa.school.tests.*;
 import static com.codeborne.selenide.Selenide.open;
 import da.qa.school.tests.config.BaseTest;
 import da.qa.shool.pages.SearchPage;
-import static org.testng.AssertJUnit.assertTrue;
+import da.qa.shool.pages.SearchResultPage;
+import static org.testng.AssertJUnit.assertEquals;
 import org.testng.annotations.Test;
 import ru.yandex.qatools.allure.annotations.Features;
 
-@Features({"Feature 1"})
+@Features({"Some other feature 1"})
 public class Test1 extends BaseTest {
 
     private SearchPage searchPage;
+    private SearchResultPage resultPage;
+    private final String TEXT = "Automated testing";
 
     @Test
-    public void some_test_method() {
+    public void first_search_result_should_contains_automated_testing() {
         searchPage = open("https://google.com.ua", SearchPage.class);
-        assertTrue(searchPage.getCurrentUrl().contains("google.com"));
+        resultPage = searchPage.search(TEXT);
+        String resultText = resultPage.getFirstResultHeader();
+        assertEquals(resultText, TEXT);
     }
 }
