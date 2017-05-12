@@ -13,7 +13,7 @@ public class Test1 extends BaseTest {
     private SearchPage searchPage;
 
     @Test
-    public void some_test_method() {
+    public void page_url_should_contains_google_com() {
         searchPage = open("https://google.com.ua", SearchPage.class);
         assertTrue(searchPage.getCurrentUrl().contains("google.com"));
     }

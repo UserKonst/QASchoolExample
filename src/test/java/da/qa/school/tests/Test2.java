@@ -13,8 +13,8 @@ public class Test2 extends BaseTest {
     private SearchPage searchPage;
 
     @Test
-    public void some_test_method() {
+    public void google_logo_should_be_displayed() {
         searchPage = open("https://google.com.ua", SearchPage.class);
-        assertTrue(searchPage.getCurrentUrl().contains("google.com"));
+        assertTrue(searchPage.isLogoDisplayed());
     }
 }
