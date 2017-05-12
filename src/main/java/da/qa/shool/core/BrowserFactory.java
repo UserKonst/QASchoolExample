@@ -2,14 +2,15 @@ package da.qa.shool.core;
 
 import com.codeborne.selenide.WebDriverRunner;
 import java.net.MalformedURLException;
+import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import ru.yandex.qatools.allure.annotations.Step;
 
 public class BrowserFactory {
@@ -33,8 +34,8 @@ public class BrowserFactory {
 
         }
 
-//        WebDriver driver = new RemoteWebDriver(new URL(GRID_URL), caps);
-        WebDriver driver = new ChromeDriver(caps);
+        WebDriver driver = new RemoteWebDriver(new URL(GRID_URL), caps);
+//        WebDriver driver = new ChromeDriver(caps);
 
         driver.manage().window().maximize();
         driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
